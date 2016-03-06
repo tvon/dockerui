@@ -14,8 +14,8 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-10">
-            <div class="col-xs-5">
+        <div class="col-xs-12">
+            <div class="col-xs-7">
                 <h3>Running Containers</h3>
                 <ul>
                     <li ng-repeat="container in containers|orderBy:predicate">
@@ -36,16 +36,22 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-10" id="stats">
+        <div class="col-xs-12" id="stats">
             <h4>Containers created</h4>
             <canvas id="containers-started-chart" width="700">
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-                        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <p class="browserupgrade">
+                   You are using an <strong>outdated</strong> browser. Please
+                   <a href="http://browsehappy.com/">upgrade your browser</a>
+                   to improve your experience.
+                </p>
             </canvas>
             <h4>Images created</h4>
             <canvas id="images-created-chart" width="700">
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-                        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <p class="browserupgrade">
+                   You are using an <strong>outdated</strong> browser. Please
+                   <a href="http://browsehappy.com/">upgrade your browser</a>
+                   to improve your experience.
+                </p>
             </canvas>
         </div>
     </div>

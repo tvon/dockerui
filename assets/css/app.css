@@ -4,7 +4,8 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    /* footer height + 12px padding */
+    margin-bottom: 72px;
 }
 
 .footer {

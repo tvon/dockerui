@@ -25,17 +25,13 @@
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-precomposed.png">
 </head>
 
-<body>
+<body role="document">
+    <nav class="navbar navbar-default" ng-include="template" ng-controller="MastheadController"></nav>
 
-<div class="container">
-    <div ng-include="template" ng-controller="MastheadController"></div>
-
-    <div id="view" ng-view></div>
-
-    <div class="container-bottom"></div>
-    <div ng-include="template" ng-controller="FooterController"></div>
-</div>
-
-
+    <div class="container" role="main">
+        <div class="row" id="view" ng-view></div>
+        <div class="row container-bottom"></div>
+        <div class="row" ng-include="template" ng-controller="FooterController"></div>
+    </div>
 </body>
 </html>
